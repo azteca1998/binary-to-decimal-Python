@@ -1,8 +1,3 @@
-#
-#
-#
-#
-
 print("ONLY NUMBERS!")
 resultat=""
 resta=""
@@ -24,8 +19,8 @@ if mode == ("d"):
         # print("separador")   #testing
         if decimalin1 < 1:
             a = False
-    print("This is your decimal to binary result")
-    print(resta)
+    print("This is your decimal to binary result " + resta )
+    
         
 # BINARY SIDE
 elif mode == ("b"):
@@ -53,5 +48,4 @@ elif mode == ("b"):
         #print(binarydecimal1) #test
         binarydecimal=binarydecimal+binarydecimal1
         binarynum = binarynum +1
-    print("This is your binary to decimal result")
-    print(binarydecimal) #result
+    print("This is your binary to decimal result " + binarydecimal)

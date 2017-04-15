@@ -1,5 +1,5 @@
 print("ONLY NUMBERS!")
-resultat=""
+
 resta=""
 decimalbinary = ""
 mode = input("'d' Decimal o 'b' Binary\n")

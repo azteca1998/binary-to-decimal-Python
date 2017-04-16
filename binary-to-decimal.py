@@ -48,4 +48,4 @@ elif mode == ("b"):
         #print(binarydecimal1) #test
         binarydecimal=binarydecimal+binarydecimal1
         binarynum = binarynum +1
-    print("This is your binary to decimal result " + binarydecimal)
+    print("This is your binary to decimal result " + str(binarydecimal))

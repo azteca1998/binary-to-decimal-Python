@@ -1,12 +1,14 @@
 print("ONLY NUMBERS!")
-
+resultat=""
 resta=""
 decimalbinary = ""
 mode = input("'d' Decimal o 'b' Binary\n")
 binarydecimal1 = 0
 # DECIMAL SIDE
 decimalin1 =""
-if mode == ("d"):
+
+def decimal():
+
     decimalin = int(input("Input a decimal number\n"))
     decimalin1 = decimalin
     a = True
@@ -20,10 +22,9 @@ if mode == ("d"):
         if decimalin1 < 1:
             a = False
     print("This is your decimal to binary result " + resta )
-    
-        
 # BINARY SIDE
-elif mode == ("b"):
+
+def binary():
     binaryin = input("Input a binary number:\n")
     i = len(binaryin) -1
     binarynum = 0
@@ -49,3 +50,11 @@ elif mode == ("b"):
         binarydecimal=binarydecimal+binarydecimal1
         binarynum = binarynum +1
     print("This is your binary to decimal result " + str(binarydecimal))
+
+
+
+if mode == ("d"):
+    decimal()
+elif mode == ("b"):
+    binary()
+

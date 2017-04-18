@@ -1,6 +1,6 @@
 print("ONLY NUMBERS!")
 resultat=""
-resta=""
+
 decimalbinary = ""
 mode = input("'d' Decimal o 'b' Binary\n")
 binarydecimal1 = 0
@@ -8,7 +8,7 @@ binarydecimal1 = 0
 decimalin1 =""
 
 def decimal():
-
+    resta=""
     decimalin = int(input("Input a decimal number\n"))
     decimalin1 = decimalin
     a = True

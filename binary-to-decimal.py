@@ -1,11 +1,7 @@
-print("ONLY NUMBERS!")
-resultat=""
+mode = input("'d' Decimal o 'b' Binary 'exit' to leave\n")
 
-decimalbinary = ""
-mode = input("'d' Decimal o 'b' Binary\n")
-binarydecimal1 = 0
 # DECIMAL SIDE
-decimalin1 =""
+
 
 def decimal():
     resta=""
@@ -13,7 +9,7 @@ def decimal():
     decimalin1 = decimalin
     a = True
     while not a == False:
-        resta =str(int(decimalin1 % 2)) + resta
+        resta = str(int(decimalin1 % 2)) + resta
         decimalin1= decimalin1 / 2
         
         # print(resta)       #testing
@@ -21,7 +17,7 @@ def decimal():
         # print("separador")   #testing
         if decimalin1 < 1:
             a = False
-    print("This is your decimal to binary result " + resta )
+    print("This is your decimal to binary result " + resta ) 
 # BINARY SIDE
 
 def binary():
@@ -50,11 +46,15 @@ def binary():
         binarydecimal=binarydecimal+binarydecimal1
         binarynum = binarynum +1
     print("This is your binary to decimal result " + str(binarydecimal))
+# menu side
+while True:
 
-
-
-if mode == ("d"):
-    decimal()
-elif mode == ("b"):
-    binary()
-
+    if mode == ("d"):
+        decimal()
+        mode = input("'d' Decimal o 'b' Binary 'exit' to leave\n")
+    elif mode == ("b"):
+        binary()
+        mode = input("'d' Decimal o 'b' Binary 'exit' to leave\n")
+    elif mode == ("exit"):
+        print("Bye!")
+        exit()

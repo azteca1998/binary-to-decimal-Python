@@ -1,5 +1,5 @@
 ipin = str(input("entra una ip vàlida/n"))
-##maskin = input("entra una màscara vàlida/n")
+#maskin = input("entra una màscara vàlida/n")
 hola = 0
 i = 0
 control = 0

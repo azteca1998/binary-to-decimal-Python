@@ -1,23 +1,17 @@
-mode = input("'d' Decimal o 'b' Binary 'exit' to leave\n")
+# To choose a converter you need to write the function decimal(num) or binary(num)
+
 
 # DECIMAL SIDE
-
-
-def decimal():
-    resta=""
-    decimalin = int(input("Input a decimal number\n"))
-    decimalin1 = decimalin
-    a = True
+def decimal(decimalin):
+    a = True #This mades work the while
+    rest ="" #needed to work
     while not a == False:
-        resta = str(int(decimalin1 % 2)) + resta
-        decimalin1= decimalin1 / 2
-        
-        # print(resta)       #testing
-        # print(decimalin1)   #testing
-        # print("separador")   #testing
-        if decimalin1 < 1:
-            a = False
-    print("This is your decimal to binary result " + resta ) 
+        rest = str(int(decimalin % 2)) + rest #here I grab the rest of the division
+        decimalin= decimalin / 2  #here we made the division
+        if decimalin < 1:
+            a = False #stops the while
+    print("This is your decimal to binary result " + rest ) #result output
+
 # BINARY SIDE
 
 def binary():
@@ -46,15 +40,3 @@ def binary():
         binarydecimal=binarydecimal+binarydecimal1
         binarynum = binarynum +1
     print("This is your binary to decimal result " + str(binarydecimal))
-# menu side
-while True:
-
-    if mode == ("d"):
-        decimal()
-        mode = input("'d' Decimal o 'b' Binary 'exit' to leave\n")
-    elif mode == ("b"):
-        binary()
-        mode = input("'d' Decimal o 'b' Binary 'exit' to leave\n")
-    elif mode == ("exit"):
-        print("Bye!")
-        exit()

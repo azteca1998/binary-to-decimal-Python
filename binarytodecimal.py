@@ -14,8 +14,9 @@ def decimal(decimalin):
 
 # BINARY SIDE
 
-def binary():
-    binaryin = input("Input a binary number:\n")
+def binary(binaryin):
+    binaryin = str(binaryin)
+    i=0
     i = len(binaryin) -1
     binarynum = 0
     binarydecimal = 0
@@ -34,9 +35,9 @@ def binary():
     # X is for the possision of the binary number
     while not binarynum == len(binaryin):
         
-        #print(binarynum)        #test
+##        print(binarynum)        #test
         binarydecimal1=int(binaryintra[binarynum])*2**binarynum
-        #print(binarydecimal1) #test
+##        print(binarydecimal1) #test
         binarydecimal=binarydecimal+binarydecimal1
         binarynum = binarynum +1
     print("This is your binary to decimal result " + str(binarydecimal))

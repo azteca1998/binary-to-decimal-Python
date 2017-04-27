@@ -33,3 +33,5 @@ mac4ok = macin[(mac1+1+mac2+1+mac3+1):len(macin)]
 print(mac4ok)
 
 
+
+

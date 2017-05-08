@@ -3,6 +3,7 @@
 
 # DECIMAL SIDE
 def decimal(decimalin):
+    decimalin= int(decimalin)
     a = True #This mades work the while
     rest ="" #needed to work
     while not a == False:

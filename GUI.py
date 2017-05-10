@@ -28,7 +28,11 @@ if __name__ == "__main__":
     textbox1.move(20, 20)
     textbox1.resize(280,40)
 
-    textbox1.textChanged.connect(binarytodecimal.decimal)
+    def callback(*args, **kwargs):  # *args, **kwargs will pass every argument to binarytodecimal.decimal()
+        result = binarytodecimal.decimal(*args, **kwargs)
+        print(result)  # Result contains the number in decimal
+
+    textbox1.textChanged.connect(callback)
     
     textbox2 = QLineEdit(w)
     textbox2.move(20, 20)

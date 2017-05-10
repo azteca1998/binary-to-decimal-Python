@@ -13,6 +13,8 @@ def decimal(decimalin):
             a = False #stops the while
     print("This is your decimal to binary result " + rest ) #result output
 
+    return rest  # Return the decimal value
+
 # BINARY SIDE
 
 def binary(binaryin):
